@@ -1,3 +1,8 @@
+html {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .hero {
     background-image: url('https://cdn.pixabay.com/photo/2016/03/31/15/53/wallets-1293507_1280.jpg');
     background-size: cover;
@@ -94,6 +99,11 @@
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
+}
+
+.image-description p {
+    margin-top: 20px;
 }
 
 .image-title {
@@ -103,4 +113,58 @@
 .portfolio-header {
     margin-top: 0;
     margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    #slogan {
+        font-size: 40px;
+    }
+
+    .navbar {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .service-row .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
